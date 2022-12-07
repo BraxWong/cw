@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Brax.Controller.Controller_Settings">
+   <children>
+      <ImageView fitHeight="556.0" fitWidth="880.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../backgroundPNG/backgroundIMG.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="m_Background1" layoutX="44.0" layoutY="224.0" mnemonicParsing="false" onAction="#selBackground1" text="Background 1" />
+      <RadioButton fx:id="m_Background2" layoutX="244.0" layoutY="224.0" mnemonicParsing="false" onAction="#selBackground2" text="Background 2" />
+      <RadioButton fx:id="m_SnakeHead1" layoutX="134.0" layoutY="351.0" mnemonicParsing="false" onAction="#selSnakeHead1" text="Snakehead 1" />
+      <RadioButton fx:id="m_SnakeHead2" layoutX="361.0" layoutY="351.0" mnemonicParsing="false" onAction="#selSnakeHead2" text="Snakehead 2" />
+      <Button fx:id="backButton" layoutX="271.0" layoutY="444.0" mnemonicParsing="false" onAction="#switchToMenu" text="Back" />
+      <Label layoutX="395.0" layoutY="58.0" text="Settings">
+         <font>
+            <Font name="American Typewriter" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="150.0" text="Background">
+         <font>
+            <Font name="American Typewriter" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="289.0" text="Snakehead">
+         <font>
+            <Font name="American Typewriter" size="23.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="m_Background3" layoutX="440.0" layoutY="224.0" mnemonicParsing="false" onAction="#selBackground3" text="Background 3" />
+   </children>
+</AnchorPane>

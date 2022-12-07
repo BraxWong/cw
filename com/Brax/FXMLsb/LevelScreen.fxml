@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Brax.Controller.Controller_Levels">
+   <children>
+      <ImageView fitHeight="555.0" fitWidth="882.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../backgroundPNG/backgroundIMG.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="121.0" layoutY="154.0" text="Choose your level">
+         <font>
+            <Font name="American Typewriter" size="23.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="m_Level1" layoutX="34.0" layoutY="267.0" mnemonicParsing="false" onAction="#selLevel1" text="Level 1" />
+      <RadioButton fx:id="m_Level2" layoutX="187.0" layoutY="267.0" mnemonicParsing="false" onAction="#selLevel2" text="Level 2" />
+      <RadioButton fx:id="m_Level3" layoutX="344.0" layoutY="267.0" mnemonicParsing="false" onAction="#selLevel3" text="Level 3" />
+      <Button fx:id="m_StartButton" layoutX="191.0" layoutY="377.0" mnemonicParsing="false" onAction="#startGame" text="PLAY!" />
+      <Button layoutX="194.0" layoutY="458.0" mnemonicParsing="false" onAction = "#switchToMenu" text="Back" />
+   </children>
+</AnchorPane>
